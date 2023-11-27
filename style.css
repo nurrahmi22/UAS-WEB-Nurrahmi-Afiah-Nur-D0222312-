@@ -1,0 +1,265 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Bahnschrift;
+}
+
+.wrapper {
+    height: 60px;
+    width: 60%;
+    background-color: rgb(250, 235, 215);
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: opacity .5s;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.2), -2px 0px 4px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.2), 0px -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    float: right;
+    padding: 15px;
+
+}
+
+hr {
+    color: rgb(226, 172, 55);
+}
+
+table {
+
+    margin-top: 100px;
+    margin-left: 50px;
+    text-align: left;
+    font-family: Gill Sans MT;
+    color: rgb(235, 147, 89);
+
+}
+
+th {
+    padding-left: 4%;
+}
+
+hr{
+    margin-top: 5px;
+    padding-left: 0%;
+}
+
+tr {
+    margin-top: 20px;
+}
+
+.foto {
+    margin-top: 5px;
+    margin-right: 50px;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Copperplate Gothic Bold;
+    letter-spacing: 3px;
+
+}
+
+nav ul li {
+    float: left;
+    padding-inline-end: 50px;
+}
+
+nav ul li a {
+    color: black;
+
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    color: rgb(179, 148, 107);
+}
+
+td {
+
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+td textarea {
+    margin-right: 30px;
+}
+
+.kontak {
+    font-family: Mongolian Baiti;
+    color: white;
+    font-size: 15px;
+    margin-left: 32%;
+    margin-top: 3%;
+    background-color: #000000b6;
+
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button {
+    background-color: rgba(2, 1, 1, 0.89);
+    color: #754a4a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.login-button:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.colom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    float: right;
+    margin-right: 15%;
+}
+
+.colom .deskripsi{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Copperplate Gothic Bold;
+    margin-left: 50px;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.heading {
+    font-size: 45px;
+    font-family: Copperplate Gothic Bold;
+    font-weight: 800;
+    line-height: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    color: black;
+    width: 100%;
+}
+
+/* Menentukan ukuran ikon WhatsApp */
+.wa_btn i {
+    font-size: 4em; /* Sesuaikan ukuran sesuai keinginan Anda */
+}
+
+/* Menentukan posisi ikon WhatsApp */
+.wa_btn {
+    position: fixed;
+    bottom: 20px; /* Sesuaikan dengan jarak dari bawah layar */
+    right: 20px; /* Sesuaikan dengan jarak dari kanan layar */
+}
+
+/* Style lainnya jika diperlukan */
+footer {
+
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+.productlist {
+    display: flex;
+    height: 100;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.garis {
+    width: 100%;
+}
+
+.garis>hr {
+    margin-left: 47%;
+    width: 70px;
+    border-top: 4px solid #000;
+    margin-top: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5%;
+    align-items: center;
+    grid-gap: 50px;
+    padding-left: 3%;
+}
+
+.img {
+    object-fit: 250px;
+    margin: 50%;
+}
+
+.grid>article {
+    box-shadow: 3px 3px 3px 3px rgb(179, 148, 107);
+    border-radius: 5px;
+    text-align: center;
+    background: whitesmoke;
+    width: 300px;
+    transition: trasnfrom;
+    padding-bottom: 5%;
+
+}
+
+/* .grid>article>img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+} */
+
+/* .conten{
+    cursor: progress;
+} */
+.grid>article:hover {
+    transform: rotase(10deg);
+    transform: scale(0.9);
+}
+
+@media (max-width:1000px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:500px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
